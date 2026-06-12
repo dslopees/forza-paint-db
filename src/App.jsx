@@ -58,7 +58,7 @@ function parseRow(row, makesArr, typesArr) {
   return { make, name, rawType, fh6type: info.fh6, warn: info.warn, warnMsg: info.warnMsg||null, c1, c2, rgb1, rgb2, note: row[15]||'' };
 }
 
-const PER_PAGE = 48;
+const PER_PAGE = 91;
 
 const FZ = {
   accent: '#E8FF00',
@@ -78,7 +78,7 @@ const S = {
   app: {
     background: FZ.dark,
     minHeight: '100vh',
-    fontFamily: "'Rajdhani', 'Barlow Condensed', var(--font-sans)",
+    fontFamily: "'Rajdhani', 'Barlow Condensed', Arial, sans-serif",
     color: FZ.textPrimary,
     padding: '0',
   },
@@ -363,10 +363,6 @@ export default function App() {
 
   return (
     <div style={S.app}>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
-
       <div style={S.header}>
         <div style={S.logoArea}>
           <div style={S.logoIcon}>

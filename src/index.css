@@ -10,6 +10,7 @@ html, body, #root {
 }
 
 body {
+  font-family: 'Rajdhani', 'Barlow Condensed', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
